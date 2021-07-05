@@ -8,5 +8,5 @@ export const PaperContainer = styled.div`
   height: 316px;
   padding: ${(props) => props.gap}px;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 5px;
 `
