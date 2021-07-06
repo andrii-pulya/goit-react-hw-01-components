@@ -5,13 +5,16 @@ import Profile from '../Profile/Profile'
 
 import Statistics from '../Statistics/Statistics'
 import statData from '../../data/statistical-data.json'
-import { randomColor } from '../Statistics/Statistics'
+
+import FriendList from '../FriendList/FriendList'
+import friendsData from '../../data/friends.json'
 
 const Wrapper = () => {
   return (
     <Container>
       <Profile />
       <Statistics title="upload stats" stats={statData} />
+      <FriendList friends={friendsData} />
     </Container>
   )
 }
