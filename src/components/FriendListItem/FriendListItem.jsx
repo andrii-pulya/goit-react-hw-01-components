@@ -13,3 +13,9 @@ export default function FriendListItem({ avatar, name, isOnline }) {
     </FriendListContainer>
   )
 }
+
+FriendListItem.propTypes = {
+  avatar: PropTypes.string,
+  name: PropTypes.string,
+  isOnline: PropTypes.bool,
+}

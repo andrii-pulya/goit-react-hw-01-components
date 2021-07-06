@@ -17,3 +17,7 @@ export default function FriendList({ friends }) {
     </FriendContainer>
   )
 }
+
+FriendList.propTypes = {
+  friends: PropTypes.array.isRequired,
+}
