@@ -19,3 +19,8 @@ FriendListItem.propTypes = {
   name: PropTypes.string,
   isOnline: PropTypes.bool,
 }
+
+FriendListItem.defaultProps = {
+  avatar: 'https://image.flaticon.com/icons/png/512/456/456212.png',
+  name: 'Nobody',
+}

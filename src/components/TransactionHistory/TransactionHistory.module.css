@@ -1,0 +1,38 @@
+.header {
+  color: whitesmoke;
+}
+
+.headerCell {
+  background-color: #00bcd5;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  border-style: solid;
+}
+
+/* .item {
+  border-right: 1px solid grey;
+} */
+.item:nth-child(odd) {
+  background-color: f#ECF1F3;
+}
+.item:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.type {
+  padding-left: 30px;
+  text-align: start;
+  width: 34%;
+}
+
+.cell {
+  width: 33%;
+  /* border: 1px solid grey; */
+}
+
+.medium {
+  border-width: 2px;
+  border-color: transparent grey;
+  border-style: solid;
+}
