@@ -1,19 +1,20 @@
-import React from 'react'
+import React from 'react';
 
-import user from '../../data/user.json'
-import Paper from '../Paper/Paper'
-import MainUserInfo from '../MainUserInfo/MainUserInfo'
-import SocialUserInfo from '../SocialUserInfo/SocialUserInfo'
-import { Image } from './Profile.styles'
+import Paper from '../Paper/Paper';
+import SocialUserInfo from '../SocialUserInfo/SocialUserInfo';
+import { Image } from './Profile.styles';
+import { Name, Tag, Location } from '../MainUserInfo/MainUserInfo.styles';
 
-function Profile() {
+function Profile({ avatar, name, tag, location }) {
   return (
     <Paper gap={0}>
-      <Image src={user.avatar} alt="Аватар пользователя" />
-      <MainUserInfo></MainUserInfo>
-      <SocialUserInfo></SocialUserInfo>
+      <Image src={avatar} alt="Аватар пользователя" />
+      <Name>{name}</Name>
+      <Tag>@{tag}</Tag>
+      <Location>{location}</Location>
+      <SocialUserInfo />
     </Paper>
-  )
+  );
 }
 
-export default Profile
+export default Profile;
