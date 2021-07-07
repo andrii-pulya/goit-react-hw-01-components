@@ -9,8 +9,8 @@ export default function TransactionHistory({ items }) {
   return (
     <TransactionContainer>
       <TransactionHeader />
-      {items.map(({ type, amount, currency }) => (
-        <tr className={transactionStyles.item}>
+      {items.map(({ id, type, amount, currency }) => (
+        <tr className={transactionStyles.item} key={id}>
           <td className={transactionStyles.type}>{type}</td>
           <td
             className={classNames(
